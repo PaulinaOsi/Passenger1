@@ -17,11 +17,17 @@ public class Passenger {
     }
 
     public Passenger(String title, String name, String id, String phone, int age) {
-        this.title = title;
-        this.name = name;
-        this.id = id;
-        this.phone = phone;
-        this.age = age;
+        if(title.equals("")|| name.equals("")||id.equals("")||phone.equals("")|| age == 0){
+            System.out.println("fill in all fields in constructor");
+            throw new IllegalArgumentException();
+        }else{
+            this.title = title;
+            this.name = name;
+            this.id = id;
+            this.phone = phone;
+            this.age = age;
+        }
+
     }
 
 

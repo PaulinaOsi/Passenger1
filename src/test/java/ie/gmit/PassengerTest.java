@@ -108,14 +108,14 @@ public class PassengerTest {
 
 
 //     /************TESTING CONSTRUCTORS*************/
-//    @Test
-//    @DisplayName("Invalid Constructor Test (invalid name)")
-//    void testConstructorStudentName(TestInfo testInfo)
-//    {
-//        Assertions.assertThrows(IllegalArgumentException.class, () -> {
-//            new Passenger("Mr", "john","0123456789","0123456789",27);
-//        });
-//    }
+   @Test
+    @DisplayName("Invalid Constructor Test (invalid name)")
+  void testConstructorStudentName(TestInfo testInfo)
+   {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+           new Passenger("", "","0123456789","0123456789",27);
+      });
+    }
 
     @Test
     @DisplayName("Valid Constructor test")
