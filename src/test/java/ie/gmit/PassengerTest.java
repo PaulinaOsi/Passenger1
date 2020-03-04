@@ -118,6 +118,7 @@ public class PassengerTest {
     }
 
     @Test
+
     @DisplayName("Valid Constructor test")
     void testConstructorValid(TestInfo testInfo)
     {
