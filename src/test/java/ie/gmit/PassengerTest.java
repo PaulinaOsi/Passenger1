@@ -122,7 +122,7 @@ public class PassengerTest {
     @DisplayName("Valid Constructor test")
     void testConstructorValid(TestInfo testInfo)
     {
-        Passenger p1 = new Passenger("Mr", "john","0123456789","0123456789",27);
+        Passenger p1 = new Passenger("Mr", "John","0123456789","0123456789",27);
         assertEquals("Mr",p1.getTitle());
         assertEquals("john",p1.getName());
         assertEquals("0123456789",p1.getId());

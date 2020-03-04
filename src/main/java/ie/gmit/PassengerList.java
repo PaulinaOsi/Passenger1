@@ -16,8 +16,10 @@ public class PassengerList {
 
     public Passenger findByName(String name) {
         for(Passenger passenger : listOfPassenger) {
-            if (passenger.getName().equals(name)) {
+            if (passenger.getName().equalsIgnoreCase(name)) {
                 return passenger;
+            }else{
+                throw new InvalidParameterException("Name not in list");
             }
         }
         return null;

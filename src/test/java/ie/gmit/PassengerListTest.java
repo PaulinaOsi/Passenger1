@@ -28,12 +28,12 @@ public class PassengerListTest {
 
 
     @Test
-    @Disabled
+
     @DisplayName("Valid ArrayList Entry test")
     void testStudentList(TestInfo testInfo)
     {
         PassengerList list = new PassengerList();
-        Passenger passenger1 = new Passenger("Mr", "john","0123456789","0123456789",27);
+        Passenger passenger1 = new Passenger("Mr", "John","0123456789","0123456789",27);
         list.addPassenger(passenger1);
         assertEquals(passenger1,list.findByName("John"));
     }
